@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ЭлитВизит Просмотр квартиры</title>
+  <link rel="stylesheet" href="css/reset.css" media="screen"/>
+  <link rel="stylesheet" href="css/initial.css" media="screen"/>
+  <link rel="stylesheet" href="css/variables.css" media="screen"/>
+  <link rel="stylesheet" href="css/style.css" media="screen" />		
+  <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+  <script  type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/script.js"> </script>
+      
+ </head>
+ <body>
+ 
+ 
+	<header class="header">
+	<div class="wrapper">
+	   <nav class="header__menu main-menu pull-left">
+	      <ul>
+             <li class="active"><a href="#">Главная</a></li><li class="">
+             <a href="#">О нас</a></li><li class="">
+             <a href="#">Статьи</a></li><li class="">
+             <a href="#">Контакты</a></li>
+	     </ul>
+	  </nav>
+	  <nav class="header__menu menu-lang pull-right">
+	      <ul>
+             <li class="active"><a href="#">Rus</a></li>
+			 <li class=""><a href="#">Ukr</a></li>
+			 <li class=""><a href="#">Eng</a></li>
+	     </ul>
+	  </nav>
+	  <nav class="header__menu menu-enter pull-right">
+	      <ul>
+             <li><a href="#registration_window" class="hidden_window_trigger">Регистрация</a></li>
+			 <li><a href="#enter_window" class="hidden_window_trigger">Вход</a></li>
+	     </ul>
+	  </nav>
+	  
+	  <div class="clear"></div>
+	</div>
+	</header>
+	<div class="logo-block">
+		<div class="wrapper">
+			<div class="logo pull-left">
+				<a href="index.html">
+					<img class="pull-left" src="img/logo.png" alt=""/>
+					<figure class="pull-right">elitvisit.com</figure>
+					<div class="clear"></div>
+				</a>
+			</div>
+			<div class="about-site pull-left">
+				<p>Сайт посуточной аренды недвижимости</p>
+			</div>
+			<div class="kurs pull-left">
+				<p>Курс валют:</p>
+				<div class="kurs1 pull-left"><img src="img/kurs-usa.jpg" alt=""/><p><span>$</span>&nbsp;25.20</p></div>
+				<div class="kurs2 pull-left"><img src="img/kurs-eur.jpg" alt=""/><p><span>&#8364;</span>&nbsp;28.27</p></div>
+				<div class="kurs3 pull-left"><img src="img/kurs-rus.jpg" alt=""/><p><span>&#8381;</span>&nbsp;0.37</p></div>
+			</div>
+			<a class="button add-advert pull-right" href="#">ДОБАВИТЬ ОБЪЯВЛЕНИЕ</a>
+			<div class="clear"></div>
+		</div>
+	</div>	
+
+	
+<div class="main flat-page">
+
+		<div class="search-block">
+			<div class="wrapper">
+				<div class="search">
+					<form method="post">
+						<div class="search-input long" >
+							<h4>Введите город:</h4>
+							<input class="" type="text" placeholder="Все города"/>
+						</div>
+						<div class="search-input long" ><h4>Тип недвижимости:</h4>	
+							<select class="">
+								<option>Все типы</option>
+								<option>1-комнатная квартира</option>
+								<option>2-комнатная квартира</option>
+								<option>3-комнатная квартира</option>
+								<option>Частный дом</option>
+							</select>
+						</div>
+						<div class="search-input medium" >
+							<h4>Кол-во человек:</h4>
+							<input class="" type="text" placeholder="Не указано"/>
+						</div>
+						<div class="search-input long">
+							<h4>Цена</h4>
+							<input class="input-from " name="from" type="text" placeholder="От(грн)"/>
+							<span>&#8212;</span>
+							<input class="input-to " name="to" type="text" placeholder="До(грн)"/>
+							<div class="clear"></div>
+						</div>
+						<a class="button button-search" href="#search-results">ПОИСК</a>
+					</form>
+				</div>
+				<a href="#wide-search-down" class="wide-search">Расширенный поиск&nbsp;<img src="img/down_arr.png" alt=""/></a>
+				
+				<div class="wide-search-down" id="wide-search-down">
+					<form method="post">
+						<div class="search-input"><input type="checkbox" id="kond1" name="condition1"/><label for="kond1">Кондиционер</label></div>
+						<div class="search-input"><input type="checkbox" id="kond2" name="condition2"/><label for="kond2">Телевизор</label></div>
+						<div class="search-input"><input type="checkbox" id="kond3" name="condition3"/><label for="kond3">Бойлер</label></div>
+						<div class="search-input"><input type="checkbox" id="kond4" name="condition4"/><label for="kond4">Автономное отопление</label></div>
+						<div class="search-input"><input type="checkbox" id="kond5" name="condition5"/><label for="kond5">Духовка</label></div>
+						<div class="search-input"><input type="checkbox" id="kond6" name="condition6"/><label for="kond6">Микроволновая печь</label></div>
+						<div class="search-input"><input type="checkbox" id="kond7" name="condition7"/><label for="kond7">Автономное отопление</label></div>
+						<div class="search-input"><input type="checkbox" id="kond8" name="condition8"/><label for="kond8">Евроремонт</label></div>
+						<div class="search-input"><input type="checkbox" id="kond9" name="condition9"/><label for="kond9">Парковка</label></div>
+						<div class="search-input"><input type="checkbox" id="kond10" name="condition10"/><label for="kond10">WiFi</label></div>
+						<div class="search-input"><input type="checkbox" id="kond11" name="condition11"/><label for="kond11">Духовка</label></div>
+						<div class="search-input"><input type="checkbox" id="kond12" name="condition12"/><label for="kond12">Микроволновая печь</label></div>
+					</form>
+				</div>	
+			</div>
+		</div>
+		<div class="wrapper main">
+			<div class="map pull-left" id="map">	
+			</div>
+			<div class="see-full-advert-window pull-left">	
+				<div class="see__item">
+					<div class="see__item-header">
+						<h2 class="pull-left">Сдам ухоженную квартиру</h2>
+						<div class="see__item-price pull-right">
+							<p><span>370</span> грн/сутки</p>
+						</div>
+						<div class="clear"></div>
+						<div class="see__item__address pull-left"><p><img src="img/to-map.png" alt=""/>ул. Гагарина,  8А, Херсон</p></div>
+						
+						<div class="see__item__info pull-right">
+									<div class="type-flat onek"></div>
+									<div class="beds">
+										<img src="img/bad.png" alt=""/>
+										<span>5</span>
+									</div>
+									<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="see__item-img">
+						<div class="img-slider">
+							<img src="img/item1.jpg" alt=""/>
+						</div>
+					</div>
+					<div class="advert-author">
+						<div class="author-photo">
+						</div>
+						<div class="author-info">
+							<h3>Лида</h3>
+							<div class="see__item-phone"><p>+38 099 73 67 784 &nbsp; +38 099 73 67 784</p></div>
+							<a class="other-author-adver" href="#search-results">Другие объявления автора</a>
+						</div>
+					</div>
+					<a class="button author-contact" href="#">Связаться с владельцем</a>
+					<div class="see-advert-fullinfo">
+						<h3>Описание</h3>
+						<p>Сдам посуточно двухкомнатную квартиру напротив центрального рынка , рядом автостанция и автостоянка. Квартира с хорошей аурой , выполнена в деревянном стиле , после ремонта, с двумя телевизорами и вайфаем.   Магазины , находящиеся недалеко : Сильпо, АТБ, Сита Хата.</p>
+						<h3>Удобства</h3>
+						<div class="advert-cond">
+							<div class="advert-cond-item"><img src="img/checkmark.png" alt=""/><span>Евроремонт</span></div>
+							<div class="advert-cond-item"><img src="img/checkmark.png" alt=""/><span>Газ.колонка</span></div>
+							<div class="advert-cond-item"><img src="img/checkmark.png" alt=""/><span>Балкон</span></div>
+							<div class="advert-cond-item"><img src="img/checkmark.png" alt=""/><span>Телевизор</span></div>
+							<div class="advert-cond-item"><img src="img/checkmark.png" alt=""/><span>Утюг</span></div>
+							<div class="advert-cond-item"><img src="img/checkmark.png" alt=""/><span>Wi-Fi/Интернет</span></div>
+							<div class="advert-cond-item"><img src="img/checkmark.png" alt=""/><span>Холодильник</span></div>
+							<div class="advert-cond-item"><img src="img/checkmark.png" alt=""/><span>Духовка</span></div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>	
+			<div class="clear"></div>
+		</div>
+		<div class="saw-block">
+			<div class="wrapper">	
+				<div class="pull-left"><h2>Вы смотрели</h2></div><a class="pull-right" href="#">Все объявления</a>
+				<div class="clear"></div>
+				<div class="saw-block__item">
+					<div class="type flat"></div>
+					<div class="saw-block__item__img"><a href="#"><img src="img/1.jpg" height=135  alt=""/></a></div>
+					<div class="saw-block__item__name"><p>4-х комнатный люкс</p></div>
+					<div class="saw-block__item__address"><p><img src="img/to-map.png" alt=""/>ул. Гагарина, 8А, Херсон</p></div>
+					<div class="saw-block__item__price"><p><span>690</span> грн/сутки</p></div>
+				</div>
+				<div class="saw-block__item">
+					<div class="type flat"></div>
+					<div class="saw-block__item__img"><a href="#"><img src="img/1.jpg" height=135  alt=""/></a></div>
+					<div class="saw-block__item__name"><p>4-х комнатный люкс</p></div>
+					<div class="saw-block__item__address"><p><img src="img/to-map.png" alt=""/>ул. Гагарина, 8А, Херсон</p></div>
+					<div class="saw-block__item__price"><p><span>690</span> грн/сутки</p></div>
+				</div>
+				<div class="saw-block__item">
+					<div class="type flat"></div>
+					<div class="saw-block__item__img"><a href="#"><img src="img/1.jpg" height=135  alt=""/></a></div>
+					<div class="saw-block__item__name"><p>4-х комнатный люкс</p></div>
+					<div class="saw-block__item__address"><p><img src="img/to-map.png" alt=""/>ул. Гагарина, 8А, Херсон</p></div>
+					<div class="saw-block__item__price"><p><span>690</span> грн/сутки</p></div>
+				</div>
+				<div class="saw-block__item">
+					<div class="type house"></div>
+					<div class="saw-block__item__img"><a href="#"><img src="img/1.jpg" height=135  alt=""/></a></div>
+					<div class="saw-block__item__name"><p>4-х комнатный люкс</p></div>
+					<div class="saw-block__item__address"><p><img src="img/to-map.png" alt=""/>ул. Гагарина, 8А, Запорожье</p></div>
+					<div class="saw-block__item__price"><p><span>690</span> грн/сутки</p></div>
+				</div>
+				<div class="saw-block__item">
+					<div class="type house"></div>
+					<div class="saw-block__item__img"><a href="#"><img src="img/1.jpg" height=135  alt=""/></a></div>
+					<div class="saw-block__item__name"><p>4-х комнатный люкс</p></div>
+					<div class="saw-block__item__address"><p><img src="img/to-map.png" alt=""/>ул. Гагарина, 8А, Херсон</p></div>
+					<div class="saw-block__item__price"><p><span>690</span> грн/сутки</p></div>
+				</div>
+			</div>
+		</div>	
+	<div class="bottom-text-line"></div>
+	<div class="wrapper">
+		<div class="bottom-text">
+			<p>elitvisit.com – это международный сайт посуточной аренды недвижимости. На сайте elitvisit.com, Вы сможете разместить объявления о посуточной аренде недвижимости (квартир, домов, гостиниц, хостелов, пансионатов и др.) в разных городах. А клиент получает возможность выбрать наиболее подходящий для него вариант проживания (жилья, недвижимости) и напрямую связаться с владельцем или агентом, который управляет данной недвижимостью.</p>
+		</div>
+	</div>
+</div>
+
+
+	<footer class="footer">
+	<div class="footer-wrapper">
+		<div class="footer__developed pull-right">Создание сайта:&nbsp;<a href="#">Q-Start</a></div>
+		<nav class="footer__menu pull-left">
+			<ul>
+			    <li><a href="#">Главная</a></li>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Статьи</a></li>
+				<li><a href="#">Правила</a></li>
+				<li><a href="#">Контакты</a></li>
+
+			</ul>
+		</nav>
+		<div class="clear"></div>
+		<div class="footer__copyright">
+			<p>© elitvisit.com, 2015, все права защищены</p>
+		</div>
+	</div>
+	</footer>
+	<script>
+		var map;
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: -34.397, lng: 150.644},
+				zoom: 8
+			});
+		}
+	</script>	
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPm0WBtRzDjrdDqvIqgFx69Wd4m7Ph7bA&callback=initMap">
+	</script>
+ </body>
+ </html>
+ 

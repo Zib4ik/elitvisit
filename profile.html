@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ЭлитВизит Ваш профиль</title>
+  <link rel="stylesheet" href="css/reset.css" media="screen"/>
+  <link rel="stylesheet" href="css/initial.css" media="screen"/>
+  <link rel="stylesheet" href="css/variables.css" media="screen"/>
+  <link rel="stylesheet" href="css/style.css" media="screen" />		
+  <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+  <script  type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="js/script.js"> </script>
+      
+ </head>
+ <body>
+ 
+ 
+	<header class="header">
+		<div class="wrapper">
+		   <nav class="header__menu main-menu pull-left">
+			  <ul>
+				 <li class="active"><a href="#">Главная</a></li><li class="">
+				 <a href="#">О нас</a></li><li class="">
+				 <a href="#">Статьи</a></li><li class="">
+				 <a href="#">Контакты</a></li>
+			 </ul>
+		  </nav>
+		  <nav class="header__menu menu-lang pull-right">
+			  <ul>
+				 <li class="active"><a href="#">Rus</a></li>
+				 <li class=""><a href="#">Ukr</a></li>
+				 <li class=""><a href="#">Eng</a></li>
+			 </ul>
+		  </nav>
+		  <nav class="header__menu menu-enter pull-right">
+			  <ul>
+				 <li><a href="#registration_window" class="hidden_window_trigger">Регистрация</a></li>
+				 <li><a href="#enter_window" class="hidden_window_trigger">Вход</a></li>
+			 </ul>
+		  </nav>
+		  
+		  <div class="clear"></div>
+		</div>
+	</header>
+	<div class="logo-block">
+		<div class="wrapper">
+			<div class="logo pull-left">
+				<a href="index.html">
+					<img class="pull-left" src="img/logo.png" alt=""/>
+					<figure class="pull-right">elitvisit.com</figure>
+					<div class="clear"></div>
+				</a>
+			</div>
+			<div class="about-site pull-left">
+				<p>Сайт посуточной аренды недвижимости</p>
+			</div>
+			<div class="kurs pull-left">
+				<p>Курс валют:</p>
+				<div class="kurs1 pull-left"><img src="img/kurs-usa.jpg" alt=""/><p><span>$</span>&nbsp;25.20</p></div>
+				<div class="kurs2 pull-left"><img src="img/kurs-eur.jpg" alt=""/><p><span>&#8364;</span>&nbsp;28.27</p></div>
+				<div class="kurs3 pull-left"><img src="img/kurs-rus.jpg" alt=""/><p><span>&#8381;</span>&nbsp;0.37</p></div>
+			</div>
+			<a class="button add-advert pull-right" href="advert.html">ДОБАВИТЬ ОБЪЯВЛЕНИЕ</a>
+			<div class="clear"></div>
+		</div>
+	</div>	
+	
+	<div class="main profile-page">
+		<div class="search-block">
+			<div class="wrapper">
+				<div class="search">
+					<form method="post">
+						<div class="search-input long" >
+							<h4>Введите город:</h4>
+							<input class="" type="text" placeholder="Все города"/>
+						</div>
+						<div class="search-input long" ><h4>Тип недвижимости:</h4>	
+							<select class="">
+								<option>Все типы</option>
+								<option>1-комнатная квартира</option>
+								<option>2-комнатная квартира</option>
+								<option>3-комнатная квартира</option>
+								<option>Частный дом</option>
+							</select>
+						</div>
+						<div class="search-input medium" >
+							<h4>Кол-во человек:</h4>
+							<input class="" type="text" placeholder="Не указано"/>
+						</div>
+						<div class="search-input long">
+							<h4>Цена</h4>
+							<input class="input-from " name="from" type="text" placeholder="От(грн)"/>
+							<span>&#8212;</span>
+							<input class="input-to " name="to" type="text" placeholder="До(грн)"/>
+							<div class="clear"></div>
+						</div>
+						<a class="button button-search" href="results.html">ПОИСК</a>
+						
+					</form>
+					
+				</div>
+				<a href="#wide-search-down" class="wide-search">Расширенный поиск&nbsp;<img src="img/down_arr.png" alt=""/></a>
+				
+				<div class="wide-search-down" id="wide-search-down">
+					<form method="post">
+						<div class="search-input"><input type="checkbox" id="kond1" name="condition1"/><label for="kond1">Кондиционер</label></div>
+						<div class="search-input"><input type="checkbox" id="kond2" name="condition2"/><label for="kond2">Телевизор</label></div>
+						<div class="search-input"><input type="checkbox" id="kond3" name="condition3"/><label for="kond3">Бойлер</label></div>
+						<div class="search-input"><input type="checkbox" id="kond4" name="condition4"/><label for="kond4">Автономное отопление</label></div>
+						<div class="search-input"><input type="checkbox" id="kond5" name="condition5"/><label for="kond5">Духовка</label></div>
+						<div class="search-input"><input type="checkbox" id="kond6" name="condition6"/><label for="kond6">Микроволновая печь</label></div>
+						<div class="search-input"><input type="checkbox" id="kond7" name="condition7"/><label for="kond7">Автономное отопление</label></div>
+						<div class="search-input"><input type="checkbox" id="kond8" name="condition8"/><label for="kond8">Евроремонт</label></div>
+						<div class="search-input"><input type="checkbox" id="kond9" name="condition9"/><label for="kond9">Парковка</label></div>
+						<div class="search-input"><input type="checkbox" id="kond10" name="condition10"/><label for="kond10">WiFi</label></div>
+						<div class="search-input"><input type="checkbox" id="kond11" name="condition11"/><label for="kond11">Духовка</label></div>
+						<div class="search-input"><input type="checkbox" id="kond12" name="condition12"/><label for="kond12">Микроволновая печь</label></div>
+					</form>
+				</div>	
+			</div>
+		</div>
+		<div class="main profile-window">
+			<div class="wrapper">
+				<h1>Настройки профиля</h1>
+				<form class="profile" enctype="multipart/form-data" method="post">
+					<h2>Управление Вашим аккаунтом и паролем</h2>
+					<div class="col30 pull-left">
+						<div class="input"><h4>Имя, отображаемое на сайте:</h4><input type="text" placeholder="" required/></div>
+						<div class="input"><h4>Логин:</h4><input type="text" placeholder="" required/></div>
+						<div class="input"><h4>Новый пароль:</h4><input type="password" placeholder="" required/></div>
+						<div class="input"><h4>Повторите новый пароль:</h4><input type="password" placeholder="" required/></div>
+					</div>
+					<div class="col60 pull-right text-left button-load-photo">
+						<div class="input">	
+							<h4>Ваша фотография:</h4>
+							<img src="img/load_photo.jpg" alt=""/>
+							<div class="clear"></div>
+							<input type="file" class="hidden"/>
+							<a href="#" class="button load_photo">ЗАГРУЗИТЬ ФОТО</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<h2>Управление аккаунтом агента</h2>
+					<div class="col30 pull-left">
+						<div class="input"><h4>Специальность:</h4><input type="text" placeholder="" required/></div>
+						<div class="input"><h4>Номер телефона:</h4><input type="text" placeholder="" required/></div>
+						<div class="input"><h4>Дополнительный номер телефона:</h4><input type="text" placeholder="" required/></div>
+						<div class="input"><h4>Skype:</h4><input type="text" placeholder="" required/></div>
+					</div>
+					<div class="col60 pull-right">
+						<div class="input"><h4>О себе:</h4><textarea placeholder="" required></textarea>
+							<div class="col50 pull-left">
+								<div class="input"><h4>Facebook:</h4><input type="text" placeholder="" required/></div>
+								<div class="input"><h4>LinkedIn:</h4><input type="text" placeholder="" required/></div>
+							</div>
+							<div class="col50 pull-right">
+								<div class="input"><h4>Google+:</h4><input type="text" placeholder="" required/></div>
+								
+								<a class="button load-info-button pull-right" href="#">ОБНОВИТЬ ИНФОРМАЦИЮ</a>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</form>
+			</div>
+		</div>
+		<div class="bottom-text-line"></div>
+		<div class="bottom-text">
+			<div class="wrapper">
+				<p>elitvisit.com – это международный сайт посуточной аренды недвижимости. На сайте elitvisit.com, Вы сможете разместить объявления о посуточной аренде недвижимости (квартир, домов, гостиниц, хостелов, пансионатов и др.) в разных городах. А клиент получает возможность выбрать наиболее подходящий для него вариант проживания (жилья, недвижимости) и напрямую связаться с владельцем или агентом, который управляет данной недвижимостью.</p>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="footer-wrapper">
+			<div class="footer__developed pull-right">Создание сайта:&nbsp;<a href="#">Q-Start</a></div>
+			<nav class="footer__menu pull-left">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">О нас</a></li>
+					<li><a href="#">Статьи</a></li>
+					<li><a href="#">Правила</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="clear"></div>
+			<div class="footer__copyright">
+				<p>© elitvisit.com, 2015, все права защищены</p>
+			</div>
+		</div>
+	</footer>
+	<script>
+		var map;
+		function initMap() {
+			map = new google.maps.Map(document.getElementById('map'), {
+				center: {lat: -34.397, lng: 150.644},
+				zoom: 8
+			});
+		}
+	</script>	
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPm0WBtRzDjrdDqvIqgFx69Wd4m7Ph7bA&callback=initMap">
+	</script>
+ </body>
+ </html>
+ 
